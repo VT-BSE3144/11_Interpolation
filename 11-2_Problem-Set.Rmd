@@ -36,7 +36,7 @@ Dens <- c(1.71,1.39,1.12,0.957,0.841,0.771)
 ```
 
 
-Imagine you were given the following table above and you did not have R. Use the linear interpolation equation to estimate density at 32.9℉. (Do your calculations in the chunk below). 
+Imagine you were given the table above and you did not have R. Use the linear interpolation equation to estimate density at 32.9℉. (Do your calculations in the chunk below). 
 
 ```{r}
 
