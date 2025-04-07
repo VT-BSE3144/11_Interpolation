@@ -1,10 +1,10 @@
 ---
-title: 'Week 11: Interpolation Examples'
-output:
-  pdf_document: default
-  html_document:
-    df_print: paged
+output: html_document
+params:
+  version: 1.0
 ---
+
+# Interpolation and Extrapolation Examples
 
 ```{r setup}
 knitr::opts_chunk$set(echo = TRUE)

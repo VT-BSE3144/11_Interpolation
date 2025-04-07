@@ -1,11 +1,10 @@
 ---
-title: 'Week 11: Interpolation Techniques'
-format:
-  html:
-    df_print: paged
-    toc: true
-    toc-depth: 6
+output: html_document
+params:
+  version: 1.0
 ---
+
+# Interpolation and Extrapolation
 
 ```{r setup}
 knitr::opts_chunk$set(echo = TRUE)
