@@ -15,28 +15,21 @@ library(PolynomF)
 library(pracma)
 ```
 
-## Problem 1. 
+## Problem 1.
 
-Describe the difference between regression and interpolation. Provide a hand-drawn figure to illustrate. In the description, identify the following:
-- limitations to both
-- R tools available
-- best user practices
+Describe the difference between regression and interpolation. Provide a hand-drawn figure to illustrate. In the description, identify the following: - limitations to both - R tools available - best user practices
 
-## Problem 2. 
+## Problem 2.
 
-The following data describes a series of density measurements collected at a range of temperatures. 
-
-|-----------|--|--|--|--|--|--|
-|T [&deg; F]|20|25|30|35|40|45|
-|D [kg m-3]|1.71|1.39|1.12|0.957|0.841|0.771| 
+The following data describes a series of density measurements collected at a range of temperatures.
 
 ```{r}
 Temp <- c(20,25,30,35,40,45)
-Dens <- c(1.71,1.39,1.12,0.957,0.841,0.771) 
+Dens <- c(1.71,1.39,1.12,0.957,0.841,0.771)
+knitr::kable(data.frame(Temp, Dens), col.names = c("Temp [&deg;F]", "Density [kg m^-3^]"))
 ```
 
-
-Imagine you were given the table above and you did not have R. Use the linear interpolation equation to estimate density at 32.9℉. (Do your calculations in the chunk below). 
+Imagine you were given the table above and you did not have R. Use the linear interpolation equation to estimate density at 32.9°F. (Do your calculations in the chunk below).
 
 ```{r}
 
@@ -49,10 +42,10 @@ Now using R functions show the resulting plots for linear, spline, nearest, and 
 ```
 
 For this dataset, what method would you recommend?
- 
+
 ## Problem 3.
 
-In engineering applications, steam tables are often used to determine thermodynamic properties of water and steam at various temperatures and pressures. You are tasked with interpolating values from a steam table to find the specific enthalpy of  water at a given temperature using interpolation.
+In engineering applications, steam tables are often used to determine thermodynamic properties of water and steam at various temperatures and pressures. You are tasked with interpolating values from a steam table to find the specific enthalpy of water at a given temperature using interpolation.
 
 A steam table is provided for saturated water by temperature in the data folder.
 
@@ -60,7 +53,7 @@ A steam table is provided for saturated water by temperature in the data folder.
 steam <- read_csv(file = "data/saturated_by_temperature_V1.5.csv", skip = 6)
 ```
 
-Using linear interpolation, what is the enthalpy of liquid water at 370.5 &deg;C? 
+Using linear interpolation, what is the enthalpy of liquid water at 370.5 °C?
 
 ```{r}
 
@@ -71,4 +64,3 @@ What method of interpolation would improve upon this interpolated estimate? Use 
 ```{r}
 
 ```
-
